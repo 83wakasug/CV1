@@ -152,8 +152,30 @@ a{
 
 }
 
+.container-name{
+  display:flex;
+  flex-direction: column; /* 垂直方向に配置 
+  height: 100%; /* セクションの高さに合わせる */
+  align-items: flex-start; /* 左寄せ */
+
+
+}
+
 .firstName,.lastName{
+  margin:10%;
   font-family: "Anton", serif;
   font-optical-sizing: auto;
-  font-size:3.5em;
+  font-size:4.5em;
+}
+
+
+.lastName{
+  margin-left:35%;
+ text-align: end;
+ font-family: "Anton", serif;
+ font-optical-sizing: auto;
+ font-size: 4.5em;
+
+
+
 }
