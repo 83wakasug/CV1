@@ -13,7 +13,7 @@
 html,body,main{
  height:100%;
  margin:0;
- font-size: 100%;
+ font-size: 90%;
 }
 
 
@@ -60,7 +60,7 @@ body {
 
   display: flex;
 
-  height:40%;
+  height:48%;
   margin: 1%;
 }
 
@@ -110,6 +110,8 @@ body {
   margin-left:3%
 }
 
+
+
 .project-section{
  display: flex;
  width: 100%;
@@ -118,13 +120,17 @@ body {
  
 }
 
-.project{
-  width:23%;
-  height:38%;
+.projectTitle{
+  width:10%;
+  height:6%;
   margin-top:1%;
-  
+  }
 
-}
+  .project{
+    width:23%;
+    height:35%;
+    margin-top:1%;
+    }
 
 .project1{
   background-color: aqua;
@@ -192,8 +198,7 @@ a{
 .firstName,.lastName{
   margin:10%;
   font-family: "Anton", serif;
-  font-optical-sizing: auto;
-  font-size: 400%;
+  font-size: 4vw;
 }
 
 
@@ -202,40 +207,104 @@ a{
   margin-bottom:20%;
  text-align: end;
  font-family: "Anton", serif;
- font-optical-sizing: auto;
- font-size: 400%;
 }
 
-
-
-@media screen and (max-width: 725px) {
+@media screen and (max-width: 480px) {
   html,main {
-    font-size: 100%;
+    font-size: 2vw;
     height:100%;
   }
   
 
-
   .sec-profilebild, .section-cv {
     width: 100%;
-    height:50%;
-   
+    height:48%;
+    margin:1%;
    
   }
 
 
+  .project{
+    height:5%;
+    display:flex;
+    justify-content: space-between;
+  }
+ 
 
   .above-section{
-    height:50%;
+    height:40%;
     flex-wrap:wrap;
   }
 
+  .smooch-sans-text{
+  font-size: 260%;
 
+  }
 
   .project1, .project2 {
     width: 50%;
     flex:1 0 40%;
+    height:40%;
+    
+  }
+  .project-section{
     height:50%;
+    flex-wrap:wrap;
+  }
+
+  footer{
+
+   
+    display:flex;
+    justify-content: left;
+    
+
+  }
+}
+
+@media screen and (max-width: 725px) {
+  html,main {
+    font-size: 1.7vw;
+    height:100%;
+  }
+  
+  
+  .firstName,.lastName{
+   font-size:6vw;
+    margin-top: 0;
+
+  }
+
+  .sec-profilebild, .section-cv {
+    width: 100%;
+    height:48%;
+    margin:1%;
+   
+  }
+
+
+  .project{
+    height:5%;
+    display:flex;
+    justify-content: space-between;
+  }
+ 
+
+  .above-section{
+    height:40%;
+    flex-wrap:wrap;
+  }
+
+  .smooch-sans-text{
+  font-size: 260%;
+
+  }
+
+  .project1, .project2 {
+    width: 50%;
+    flex:1 0 40%;
+    height:40%;
+    
   }
   .project-section{
     height:50%;
