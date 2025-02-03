@@ -94,6 +94,8 @@ body {
 }
 
 .cv-description{
+  display:absolute;
+  top:10%;
   font-family: "Anton", serif;
   font-style: normal;
   font-size: 1rem;
@@ -190,7 +192,7 @@ a{
 }
 
 .container-name{
-  display:flex;
+  display:relative;
   flex-direction: column; /* 垂直方向に配置 */
   height: 100%; /* セクションの高さに合わせる */
   align-items: flex-start; /* 左寄せ */
@@ -200,6 +202,9 @@ a{
 }
 
 .firstName,.lastName{
+  display:absolute;
+  top:10%;
+  bottom:10%;
   margin:10%;
   font-family: "Anton", serif;
   font-size: 4vw;
