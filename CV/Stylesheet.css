@@ -94,7 +94,7 @@ body {
 }
 
 .cv-description{
-  display:absolute;
+ 
   top:10%;
   font-family: "Anton", serif;
   font-style: normal;
@@ -202,7 +202,7 @@ a{
 }
 
 .firstName,.lastName{
-  display:absolute;
+
   top:10%;
   bottom:10%;
   margin:10%;
@@ -224,7 +224,7 @@ a{
   }
   
   .project1, .project2 {
-    position: relative;
+   
     width: calc(48% - 1%); /* 半分ずつ取る */
     height: auto; /* 高さをコンテンツに依存 */
     margin-left:1%;
@@ -245,10 +245,10 @@ a{
   }
 
   .image_for_project{
-    position: absolute; 
     width: 60%;
     height:50%;
     bottom:20%;
+    padding-bottom:3%;
 
   }
 
@@ -256,10 +256,12 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-end; 
+    padding-bottom:3%;
   }
 
   .bt-link{
-    position: absolute; 
+  
     bottom: 5%;
     width: 60%;
     height:10% ;
@@ -267,12 +269,26 @@ a{
     background-color: black;
     color:white;
     
+    
+  }
+
+  .project_header{
+
+    top:2%;
+
+  }
+
+  .project_description{
+
+    font-size: 1rm;
+    margin:2%;
+    top: 5%;
   }
 
 
 @media screen and (max-width: 480px) {
   html,main {
-    font-size: 50%;
+    font-size: 8px;
     height:100%;
   }
   
@@ -285,7 +301,7 @@ a{
   }
 
   .cv-description {
-    font-size: 0.2em; 
+    font-size: 0.8em; 
   }
 
   .project{
@@ -305,7 +321,7 @@ a{
 }
 
 
-@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {
   .cv-description {
     font-size: clamp(1rem, 2.5vw, 1.2rem);
   }
@@ -313,11 +329,11 @@ a{
   .firstName, .lastName {
     font-size: clamp(1.8rem, 4.5vw, 3.2rem);
   }
-}
+}*/
 
 @media screen and (max-width: 725px) {
   html,main {
-    font-size: 1.7vw;
+    font-size: 1.2vw;
     height:100%;
   }
   
@@ -374,7 +390,7 @@ a{
 
 @media screen and (min-width: 1024px) {
   html {
-    font-size: 1rem;
+    font-size: 100%;
   }
 
   
@@ -385,6 +401,7 @@ a{
   }
   .project-section{
     height:40%;
+    /*flex:0 1 40%;*/
     width: 96%;
   }
 
@@ -393,7 +410,7 @@ a{
 
 @media screen and (max-width: 320px) {
   .cv-description {
-    font-size: 100%; 
+    font-size: 6px; 
   }
 
   .firstName, .lastName {
