@@ -85,6 +85,7 @@ body {
 
 
 .section-cv{
+  position:relative;
   background-color: rgb(228, 228, 228);
   flex-direction: column;
   align-items: center;
@@ -129,10 +130,9 @@ body {
   }
 
   .icon_resume{
-    
+    position:absolute;
+    bottom: 5%;
     width: 10%;
-    margin: 10%
-
   }
 
 
@@ -219,6 +219,7 @@ a{
   }
   
   .project1, .project2 {
+    position: relative;
     width: calc(48% - 1%); /* 半分ずつ取る */
     height: auto; /* 高さをコンテンツに依存 */
     margin-left:1%;
@@ -227,21 +228,41 @@ a{
  
   .project-section{
     display:flex;
+    align-items:center;
     height:48%;
     width: 100%;
    
   }
   
   footer{
-  
-   
     display:flex;
     justify-content: left;
-    
-  
   }
 
+  .image_for_project{
+    position: absolute; 
+    width: 60%;
+    height:50%;
+    bottom:20%;
 
+  }
+
+  .project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bt-link{
+    position: absolute; 
+    bottom: 5%;
+    width: 60%;
+    height:10% ;
+    border: none;
+    background-color: black;
+    color:white;
+    
+  }
 
 
 @media screen and (max-width: 480px) {
