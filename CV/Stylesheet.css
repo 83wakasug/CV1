@@ -336,6 +336,7 @@ a{
 
   }
 
+   
   .sec-profilebild, .section-cv {
     width: 100%;
     height:48%;
@@ -361,14 +362,18 @@ a{
   }
 
   .project1, .project2 {
-    width: 100%;
-    height:50%;
+    width: 96%;
+    height:60%;
+    margin-bottom: 1%;
+    margin-left:2%;
     
   }
+
+
   .project-section{
     flex-wrap:wrap;
     height:40%;
-    width:100%;
+    width:98%;
     
   }
 
