@@ -1,64 +1,76 @@
-*{
-
- margin:0;
- padding:0;
- box-sizing: border-box;
- font-family: monospace;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
 }
 
-
-
-body
-{
-
- min-height:100vh;
- 
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows:auto 1fr 1fr auto; /* Header: 10分の1, Top: 10分の3, Main: 10分の6, Footer: 10分の1 */
+  grid-template-columns: 1fr 1fr; /* 左右のカラム */
+  gap: 0; /* 隙間をなくす */
 }
 
-.photo_container {
-  
-  width: 8%;
-  height:50%; 
-  overflow: hidden; /* 写真がコンテナからはみ出さないようにする */
-  margin: 0 auto; /* 中央揃え */
-  margin-top:3%;
-  margin-bottom:0;
+header, footer {
+  background-color: #030000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  grid-column: 1 / -1; /* 全幅 */
 }
 
-.my_pic {
-  width: 100%; 
-  height: auto;
-
+main#container {
+  display: grid;
+  grid-template-rows: 1fr 1fr; /* 2行分で分ける */
+  grid-template-columns: 1fr 1fr; /* 左右のカラム */
+  gap: 0; /* 隙間をなくす */
+  grid-column: 1 / -1; /* 全幅 */
+  grid-row: 2 / 3; /* mainは2行目から3行目に配置 */
+  min-height: 100vh;
 }
 
-#container {
-	display: grid; 
-  grid-template-rows: 280px 1000px;
-	grid-template-columns: 150px 1fr;
+/* Top Section（全幅） */
+#top {
+  grid-column: 1 / -1; /* 全幅 */
+  grid-row: 1 / 2;
+  background-color: rgb(255, 190, 152);
+  text-align: center;
+  padding: 20px;
 }
 
-main{
-  background-color: rgb(230, 226, 226);
-  display: flex;
-  justify-content: center;
-  min-height:80vh;
- 
- 
+/* Left Container（残りの左半分）*/
+#left {
+  grid-column: 1 / 2; /* 左側 */
+  grid-row: 2 / 3;
+  background-color: lightgray;
+  padding: 20px;
+  height: 110%;
 }
 
-.above-section{
- 
-   
-   width: 100%;
- 
-
+/* Right Container（残りの右半分）*/
+#right {
+  grid-column: 2 / 3; /* 右側 */
+  grid-row: 2 / 3;
+  background-color: white;
+  padding: 20px;
+  height: 110%;
 }
 
-#top{
-   grid-row:1;
-   grid-column:1/4;
-   background-color: white;
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  body {
+    grid-template-rows: auto auto 1fr; /* ヘッダーとトップが小さくなる */
+    grid-template-columns: 1fr; /* カラムは1つに */
+  }
 
+  #top {
+    grid-column: 1 / -1;
+    padding: 10px;
+  }
+
+  #left, #right {
+    grid-column: 1 / -1; /* 左右を重ねる */
+  }
 }
-
