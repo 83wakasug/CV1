@@ -34,10 +34,12 @@ main#container {
 /* Top Section（全幅） */
 #top {
   grid-column: 1 / -1; /* 全幅 */
-  grid-row: 1 / 2;
+  grid-row: 1 / 3;
   background-color: rgb(255, 190, 152);
   text-align: center;
   padding: 20px;
+  display:flex;
+  flex-direction:column;
 }
 
 /* Left Container（残りの左半分）*/
@@ -56,6 +58,16 @@ main#container {
   background-color: white;
   padding: 20px;
   height: 110%;
+}
+
+.div_contactInfo{
+  display:flex;
+  flex-direction:column;
+  align-self: flex-end;
+  text-align: right;
+  
+
+
 }
 
 /* レスポンシブ対応 */
