@@ -28,7 +28,7 @@ main#container {
   gap: 0; /* 隙間をなくす */
   grid-column: 1 / -1; /* 全幅 */
   grid-row: 2 / 3; /* mainは2行目から3行目に配置 */
-  min-height: 100vh;
+  min-height: 96vh;
 }
 
 /* Top Section（全幅） */
@@ -64,10 +64,7 @@ main#container {
   display:flex;
   flex-direction:column;
   align-self: flex-end;
-  text-align: right;
-  
-
-
+  text-align: left;
 }
 
 /* レスポンシブ対応 */
