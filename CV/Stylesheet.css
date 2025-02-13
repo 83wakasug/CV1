@@ -1,20 +1,28 @@
 * {
   box-sizing: border-box;
+  margin:0;
+  padding:0;
 }
 
 html, body {
-  margin: 0;
+
   display:flex;
   align-items: center;
   justify-content:Center;
+  height:100vh;
+  width:100%;
+  min-height: 100%
+  
  }
  
  #container{
-
-   height:100vh;
-   max-width: 1024px;
+ 
+   height:100%;
+   width:100%;
+  
    display:grid;
-   grid-template-columns:1fr;
+   max-height: 100vh;
+   grid-template-columns: auto-fit, minmax(250px, 1fr);
    grid-template-rows: auto 1fr auto;
    grid-template-areas: 
    'header'
@@ -46,11 +54,98 @@ a{
 
  .li_header{
     padding-right:3%;
+    margin:2%
 }
 
-#main_container{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+.main_container{
+
+  height:90%;
+  width: 100%;
 
 }
+
+.top-container{
+  display:flex;
+  flex-direction: row;
+  width: 100%;
+  height:48%;
+
+}
+
+.sec-profilebild{
+    margin-left: 2%;
+    margin-top:2%;
+    width: 48%;
+    height: 98%;
+    flex-direction: column;
+    background-color: red;
+    
+}
+
+.img-profilebild{
+    max-width:50%;
+    height:auto;
+
+}
+
+.section-cv {
+  margin-right: 2%;
+  width: 50%;
+  height:98%;
+  background-color: rgb(179, 179, 179);
+  margin:2%;
+  margin-left: 4%;
+  
+  
+}
+
+.projectTitle{
+   
+  margin:2%;
+
+}
+
+.bottom_container{
+  margin-right:2%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height:50%;
+
+}
+
+.project-section{
+ 
+ display:grid;
+ grid-template-columns: repeat(4,1fr);
+ grid-template-rows: auto;
+ margin:2%;
+ gap:1%;
+ grid-auto-rows: auto;
+ width: 100%;
+
+}
+
+.project{
+ 
+
+}
+
+.image_for_project {
+  max-width: 70%;
+  height: auto;
+  margin:10%;
+}
+
+.project1{
+  width:90%;
+  height:100%;
+  background-color: aqua;
+}
+.project2{
+  width:90%;
+  height:100%;
+  background-color: blueviolet;
+}
+
+
