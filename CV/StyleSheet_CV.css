@@ -7,6 +7,8 @@
 
 body {
   min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
   grid-template-rows:auto 1fr 1fr auto; /* Header: 10分の1, Top: 10分の3, Main: 10分の6, Footer: 10分の1 */
   grid-template-columns: 1fr 1fr; /* 左右のカラム */
@@ -66,6 +68,8 @@ main#container {
   align-self: flex-end;
   text-align: left;
 }
+
+
 
 /* レスポンシブ対応 */
 @media (max-width: 768px) {
