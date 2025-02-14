@@ -5,3 +5,11 @@ fetch("header.html")
 fetch("footer.html")
 .then((response) => response.text())
 .then((data) => document.querySelector("#footer").innerHTML = data);
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('.ul-navi').forEach(link => {
+      if (link.hrf === window.location.hrf) {
+          link.classList.add('a.current');
+      }
+  });
+});
