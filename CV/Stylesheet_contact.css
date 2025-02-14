@@ -28,15 +28,12 @@ html, body {
 
  }
 
- #container > header{
+ #gridcontainer > header{
   grid-area: header;
   
 }
 
-.main_container{
- width:80%;
 
-}
 
 header{
   background-color:black;
@@ -105,7 +102,26 @@ footer{
 
 
 .bt_submit{
-  
-  margin-top: 10%;
+  width: 30%;
+  margin-top: 8%;
+  height:auto;
+  background-color: rgb(145, 226, 226);
+  border:none;
+  padding: 0;
+
+}
+
+.input_field{
+   margin-bottom:3%;
+   
+
+}
+
+.button_container{
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  height:100%;
+  width: 100%;
 
 }
