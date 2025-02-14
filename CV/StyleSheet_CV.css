@@ -12,12 +12,12 @@ html{
 
 body {
   min-height: 100vh;
-  max-width: 1200px;
   margin: 0 auto;
   display: grid;
   grid-template-rows:auto 1fr 1fr auto;
   grid-template-columns: 1fr 1fr; /* 左右のカラム */
   gap: 0; 
+  height: 100%;
 }
 
 .line_left{
@@ -71,7 +71,7 @@ main#container {
   gap: 0; /* 隙間をなくす */
   grid-column: 1 / -1; /* 全幅 */
   grid-row: 2 / 3; /* mainは2行目から3行目に配置 */
-  min-height: 98vh;
+  min-height: auto;
 }
 
 /* Top Section（全幅） */
@@ -91,7 +91,7 @@ main#container {
   grid-row: 2 / 3;
   background-color: lightgray;
   padding: 20px;
-  height: 110%;
+  height: auto;
 }
 
 /* Right Container（残りの右半分）*/
@@ -100,7 +100,7 @@ main#container {
   grid-row: 2 / 3;
   background-color: white;
   padding: 20px;
-  height: 110%;
+  height: auto;
 }
 
 .div_contactInfo{
@@ -113,7 +113,7 @@ main#container {
 footer{
   height:5%;
   width: 100%;;
-  background-color: rgb(191, 199, 206);
+  background-color: rgb(196, 207, 216);
   display:flex;
   flex-direction: row;
   justify-content: flex-start;
