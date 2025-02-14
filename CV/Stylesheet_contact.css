@@ -13,6 +13,13 @@ html, body {
   min-height: 100%;
 }
 
+.li_1 {
+ 
+  background-color: red;
+
+}
+
+
  #gridcontainer{
  
   
@@ -123,5 +130,21 @@ footer{
   align-items: center;
   height:100%;
   width: 100%;
+
+}
+
+footer{
+  height:100%;
+  width: 100%;;
+  background-color: rgb(191, 199, 206);
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+}
+
+.footer_text{
+  margin-right:5%;
+
 
 }
