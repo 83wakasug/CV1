@@ -24,9 +24,34 @@ header, footer {
   background-color: #030000;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: auto;
   grid-column: 1 / -1; /* 全幅 */
+
 }
+
+.ul-nav{
+  list-style-type: none;
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+   padding:0;
+   margin:0;
+  width:100%;
+  }
+ 
+  .li_header {
+   padding: 1%;
+   display: flex;
+   align-items: center;
+ }
+ 
+ .nav-link {
+   display: inline-block;
+   padding: 10px 15px; 
+   text-decoration: none;
+   color: white;
+   background-color: transparent;
+ }
 
 main#container {
   display: grid;
@@ -35,7 +60,7 @@ main#container {
   gap: 0; /* 隙間をなくす */
   grid-column: 1 / -1; /* 全幅 */
   grid-row: 2 / 3; /* mainは2行目から3行目に配置 */
-  min-height: 96vh;
+  min-height: 98vh;
 }
 
 /* Top Section（全幅） */

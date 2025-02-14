@@ -70,7 +70,7 @@ a{
 
 .nav-link {
   display: inline-block;
-  padding: 10px 15px; /* クリック範囲を適切に確保 */
+  padding: 10px 15px; 
   text-decoration: none;
   color: white;
   background-color: transparent;
@@ -262,10 +262,12 @@ footer{
 
 }
 
-a.current {
-	color: #fff;
-	background-color: #ff5d5e;
+.li_1 {
+ 
+  background-color: red;
+
 }
+
 
 @media screen and (max-width: 725px) {
 
