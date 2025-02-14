@@ -17,7 +17,7 @@ body {
   display: grid;
   grid-template-rows:auto 1fr 1fr auto;
   grid-template-columns: 1fr 1fr; /* 左右のカラム */
-  gap: 0; 
+  gap: 0; /* 隙間をなくす */
 }
 
 .line_left{
