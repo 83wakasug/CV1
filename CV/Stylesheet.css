@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Smooch+Sans:wght@100..900&display=swap');
-* {
-  box-sizing: border-box;
-  margin:0;
-  padding:0;
-}
+
 
 html, body {
   max-width: 1200px;

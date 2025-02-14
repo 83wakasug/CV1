@@ -17,14 +17,19 @@ body {
   display: grid;
   grid-template-rows:auto 1fr 1fr auto;
   grid-template-columns: 1fr 1fr; /* 左右のカラム */
-  gap: 0; /* 隙間をなくす */
+  gap: 0; 
+}
+
+.line_left{
+  display: inline-block;
+  border-left: 5px solid rgb(255, 169, 8); 
+  
 }
 
 header, footer {
   background-color: #030000;
   color: white;
   text-align: center;
-  padding: auto;
   grid-column: 1 / -1; /* 全幅 */
 
 }
@@ -52,6 +57,12 @@ header, footer {
    color: white;
    background-color: transparent;
  }
+
+table{
+width: 100%;
+
+
+}
 
 main#container {
   display: grid;
@@ -99,8 +110,41 @@ main#container {
   text-align: left;
 }
 
+footer{
+  height:5%;
+  width: 100%;;
+  background-color: rgb(191, 199, 206);
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+}
+
+.footer_text{
+  margin-right:5%;
 
 
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0 10px; /* 上下 10px の隙間 */
+}
+th, td {
+  font-size: 0.9em;
+
+}
+
+
+.li_1 {
+ 
+  background-color: red;
+
+}
+
+
+tr:not(:last-child) td {
+  border-bottom: 10px solid transparent; /* 10px の隙間を作る */
+}
 /* レスポンシブ対応 */
 @media (max-width: 768px) {
   body {
