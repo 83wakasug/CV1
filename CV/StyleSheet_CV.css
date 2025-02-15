@@ -15,7 +15,7 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-rows:auto 1fr 1fr auto;
-  grid-template-columns: 1fr 1fr; /* 左右のカラム */
+  grid-template-columns: 1fr; 
   gap: 0; 
   height: 100%;
 }
@@ -30,7 +30,7 @@ header, footer {
   background-color: #030000;
   color: white;
   text-align: center;
-  grid-column: 1 / -1; /* 全幅 */
+
 
 }
 
@@ -72,6 +72,8 @@ main#container {
   grid-column: 1 / -1; /* 全幅 */
   grid-row: 2 / 3; /* mainは2行目から3行目に配置 */
   min-height: auto;
+
+  
 }
 
 /* Top Section（全幅） */
@@ -111,9 +113,9 @@ main#container {
 }
 
 footer{
-  height:5%;
+  height:100%;
   width: 100%;;
-  background-color: rgb(196, 207, 216);
+  background-color: rgb(191, 199, 206);
   display:flex;
   flex-direction: row;
   justify-content: flex-start;
