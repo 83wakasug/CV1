@@ -114,7 +114,9 @@ footer{
   height:auto;
   background-color: rgb(145, 226, 226);
   border:none;
-  padding: 0;
+  padding: 2%;
+  border-radius: 3%;
+  
 
 }
 
