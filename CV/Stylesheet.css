@@ -1,355 +1,353 @@
+/* Importing fonts from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Smooch+Sans:wght@100..900&display=swap');
+
+/* General reset for all elements */
 * {
   box-sizing: border-box;
-  margin:0;
-  padding:0;
-  font-family: monospace;
+  margin: 0;
+  padding: 0;
+  font-family: monospace; /* Default font */
 }
 
+/* Styling for the root HTML and body elements */
 html, body {
   max-width: 1200px;
-  margin: 0 auto;
-  display:flex;
-  align-items: center;
-  justify-content:Center;
-  height:100vh;
- 
+  margin: 0 auto; /* Centers content horizontally */
+  display: flex; /* Flexbox for centering */
+  align-items: center; /* Centers vertically */
+  justify-content: center; /* Centers horizontally */
+  height: 100vh; /* Full viewport height */
   min-height: 100%;
- 
- 
- }
- 
- #container{
- 
-   height:100%;
-   width:100%;
-  
-   display:grid;
-   max-height: 100vh;
-   grid-template-columns: auto-fit, minmax(250px, 1fr);
-   grid-template-rows: auto 1fr auto;
-   grid-template-areas: 
-   'header'
-   'main'
-   'footer';
+}
 
- }
+/* Hover effect for li_header (likely a navigation item) */
+.li_header:hover {
+  background-color: rgb(240, 156, 156); /* Light red on hover */
+}
 
- #container > header{
-   grid-area: header;
-   
+/* Styling for a link with class 'bt-link' */
+.bt-link:hover {
+  background-color: rgb(97, 97, 97); /* Dark gray on hover */
+}
 
- }
+/* Container for the overall grid layout */
+#container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  max-height: 100vh;
+  grid-template-columns: auto-fit, minmax(250px, 1fr); /* Responsive grid columns */
+  grid-template-rows: auto 1fr auto; /* Rows for header, main content, and footer */
+  grid-template-areas: 
+    'header'
+    'main'
+    'footer'; /* Grid areas for each section */
+}
 
- header{
-  background-color:black;
-  height:100%;
+/* Styling for the header inside the container */
+#container > header {
+  grid-area: header;
+}
+
+/* Header styling */
+header {
+  background-color: black; /* Dark background */
+  height: 100%;
   width: 100%;
 }
 
-a{
-  color:white;
+/* Link styling inside the document */
+a {
+  color: white; /* White color for links */
 }
 
-.ul-nav{
- list-style-type: none;
- display:flex;
- flex-direction: row;
- justify-content: flex-start;
-  padding:0;
-  margin:0;
- width:100%;
- }
+/* Navigation styling */
+.ul-nav {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; /* Align items to the left */
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
 
- .li_header {
+/* Individual list item in navigation */
+.li_header {
   padding: 1%;
   display: flex;
-  align-items: center;
+  align-items: center; /* Center items vertically */
 }
 
+/* Styling for navigation links */
 .nav-link {
   display: inline-block;
   padding: 10px 15px; 
-  text-decoration: none;
-  color: white;
-  background-color: transparent;
+  text-decoration: none; /* Removes underline */
+  color: white; /* White text */
+  background-color: transparent; /* Transparent background */
 }
 
-.main_container{
-
-  height:90%;
+/* Main container styling */
+.main_container {
+  height: 90%;
   width: 100%;
-
 }
 
-.top-container{
-  display:flex;
+/* Styling for the top section inside the main container */
+.top-container {
+  display: flex;
   flex-direction: row;
   width: 100%;
-  height:48%;
-
-
+  height: 48%; /* Adjust height */
 }
 
-.sec-profilebild{
-    margin-left: 2%;
-    margin-top:2%;
-    width: 50%;
-    height: 98%;
-    flex-direction: column;
-    background-color: red;
-    justify-content: center;
-    text-align: center;
-    display:flex;
-    
-    
+/* Profile section styling */
+.sec-profilebild {
+  margin-left: 2%;
+  margin-top: 2%;
+  width: 50%; /* Half width */
+  height: 98%;
+  flex-direction: column;
+  background-color: red; /* Temporary color */
+  justify-content: center; /* Vertically centers content */
+  text-align: center;
+  display: flex;
 }
 
-
-.img-profilebild{
-    max-width:50%;
-    height:80%;
-    border-radius: 8%;
-    margin-top:4%;
-    margin-left:30%;
-    justify-content: center;
-
+/* Styling for profile image */
+.img-profilebild {
+  max-width: 50%; /* Maximum width for the image */
+  height: 80%;
+  border-radius: 8%; /* Rounded corners */
+  margin-top: 4%;
+  margin-left: 30%;
+  justify-content: center; /* Centers image */
 }
 
+/* Styling for the CV section */
 .section-cv {
   margin-right: 1%;
-  width: 50%;
-  height:98%;
-  background-color: rgb(179, 179, 179);
-  margin-top:2%;
+  width: 50%; /* Half width */
+  height: 98%;
+  background-color: rgb(179, 179, 179); /* Light gray */
+  margin-top: 2%;
   margin-left: 2%;
-
 }
 
-.resume_a{
-  display:flex;
+/* Link for the resume section */
+.resume_a {
+  display: flex;
   justify-items: center;
   align-items: center;
 }
 
-.icon_resume{
-  height:22%;
-  width:14%;
-  margin:auto;
+/* Icon styling inside the resume section */
+.icon_resume {
+  height: 22%;
+  width: 14%;
+  margin: auto;
 }
 
-.cv-description{
- 
-  top:10%;
-  font-family: "Anton", serif;
-  font-style: normal;
+/* Description styling inside the CV section */
+.cv-description {
+  top: 10%;
+  font-family: "Anton", serif; /* Uses Anton font */
   font-size: 1rem;
-  padding:2%;
+  padding: 2%;
 }
 
+/* Title for the smooch sans text */
 .smooch-sans-text {
   font-family: "Smooch Sans", serif;
   font-optical-sizing: 100%;
   font-weight: 800;
-  height:100%;
-  font-size:2em;
-  font-style: bold;
-  margin-top:0%;
-  margin-bottom:0%;
-  margin-left:3%
+  height: 100%;
+  font-size: 2em;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: 3%;
 }
 
+/* Project section title styling */
+.projectTitle {
+  width: 10%;
+  height: 5%;
+  margin-top: 3%;
+  margin-left: 1%;
+}
 
-   
-  .projectTitle{
-    width:10%;
-    height:5%;
-    margin-top:3%;
-    margin-left:1%;
-
-    }
-
-
-.project{
-  padding:1%;
-  display:flex;
+/* General styling for each project */
+.project {
+  padding: 1%;
+  display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
-.bottom_container{
-  margin-right:2%;
+/* Bottom section layout */
+.bottom_container {
+  margin-right: 2%;
   display: flex;
   justify-content: center;
   width: 100%;
-  height:50%;
-
+  height: 50%;
 }
 
-.project-section{
- 
- display:grid;
- grid-template-columns: repeat(4,1fr);
- grid-template-rows: auto;
- margin:2%;
-
- grid-auto-rows: auto;
- width: 100%;
-
+/* Grid layout for project sections */
+.project-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  grid-template-rows: auto;
+  margin: 2%;
+  grid-auto-rows: auto;
+  width: 100%;
 }
 
-.project_header{
-  margin:2%;
+/* Header for each project */
+.project_header {
+  margin: 2%;
   text-align: center;
-
 }
 
+/* Project image styling for project 1 */
 .image_for_project_1 {
-  bottom:4%;
+  bottom: 4%;
   max-width: 80%;
   height: auto;
-  margin:auto;
+  margin: auto;
 }
 
-.image_for_project_2{
-  bottom:4%;
+/* Project image styling for project 2 */
+.image_for_project_2 {
+  bottom: 4%;
   max-width: 50%;
   height: auto;
-  margin:auto;
+  margin: auto;
 }
 
-.project1{
-  width:90%;
-  height:140%;
-  background-color: aqua;
-}
-.project2{
-  width:90%;
-  height:140%;
-  background-color: blueviolet;
+/* Project styling for the first project */
+.project1 {
+  width: 90%;
+  height: 140%;
+  background-color: aqua; /* Aqua background */
 }
 
+/* Project styling for the second project */
+.project2 {
+  width: 90%;
+  height: 140%;
+  background-color: blueviolet; /* Blueviolet background */
+}
 
-.bt-link{
-
-  border:none;
-  background-color: black;
+/* Link button styling */
+.bt-link {
+  border: none;
+  background-color: black; /* Black background */
   text-align: center;
-  color:white;
-  height:8%;
-  width:30%;
-  margin-left:12%;
-  margin-bottom:3%;
+  color: white; /* White text */
+  height: 8%;
+  width: 30%;
+  margin-left: 12%;
+  margin-bottom: 3%;
   margin-top: auto;
-  margin-right:auto;
+  margin-right: auto;
 }
 
-footer{
-  height:100%;
-  width: 100%;;
-  background-color: rgb(191, 199, 206);
-  display:flex;
+/* Footer styling */
+footer {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(191, 199, 206); /* Light gray background */
+  display: flex;
   flex-direction: row;
   justify-content: flex-start;
-
 }
 
-.footer_text{
-  margin-right:5%;
-
-
+/* Styling for footer text */
+.footer_text {
+  margin-right: 5%;
 }
 
+/* Highlighted list item in navigation */
 .li_1 {
- 
-  background-color: red;
-
+  background-color: red; /* Red background */
 }
 
-
+/* Responsive styles for smaller screens */
 @media screen and (max-width: 725px) {
-
-  .sec-profilebild{
+  
+  /* Styling for the profile section on small screens */
+  .sec-profilebild {
     margin-left: 2%;
-    margin-top:2%;
-    width: 100%;
-    height: 50%;
+    margin-top: 2%;
+    width: 100%; /* Full width */
+    height: 50%; /* Adjust height */
     flex-direction: column;
-    background-color: red;
+    background-color: red; /* Temporary color */
     justify-content: center;
     text-align: center;
-    display:flex;
-    
-    
-    
-}
+    display: flex;
+  }
 
-.section-cv {
-  margin-right: 1%;
-  width: 100%;
-  height:50%;
-  background-color: rgb(179, 179, 179);
-  margin-top:2%;
-  margin-left: 2%;
-  display:flex;
-  flex-direction: column;
-  justify-items: center;
-  
-}
+  /* Styling for the CV section on small screens */
+  .section-cv {
+    margin-right: 1%;
+    width: 100%; /* Full width */
+    height: 50%; /* Adjust height */
+    background-color: rgb(179, 179, 179); /* Light gray */
+    margin-top: 2%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
 
-.img-profilebild{
-  max-width:30%;
-  height:80%;
-  border-radius: 8%;
+  /* Adjust profile image size on small screens */
+  .img-profilebild {
+    max-width: 30%; /* Smaller image */
+    height: 80%;
+    border-radius: 8%; /* Rounded corners */
+  }
 
- }
- 
-  .project-section{
- 
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
+  /* Change the project section layout on small screens */
+  .project-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns instead of 4 */
     grid-template-rows: auto;
-    margin:2%;
-    gap:5%;
+    margin: 2%;
+    gap: 5%;
     grid-auto-rows: auto;
     width: 100%;
-   
-   }
+  }
 
-   .top-container{
-    display:flex;
-    flex-direction: column;
+  /* Adjust layout for the top container */
+  .top-container {
+    display: flex;
+    flex-direction: column; /* Stack the items */
     width: 100%;
-    height:48%;
-  
-  
+    height: 48%;
   }
 
-.name{
-  width:85%;
-}
-  .cv-description{
- 
-    top:10%;
+  /* Adjust the description font size for small screens */
+  .cv-description {
+    top: 10%;
     font-family: "Anton", serif;
-    font-style: normal;
-    font-size: 0.8rem;
-    padding:2%;
+    font-size: 0.8rem; /* Smaller text */
+    padding: 2%;
   }
-  .project1{
-    width:90%;
-    height:105%;
-    background-color: aqua;
-  }
-  .project2{
 
-    width:90%;
-    height:105%;
-    background-color: blueviolet;
+  /* Adjust project dimensions for small screens */
+  .project1 {
+    width: 90%;
+    height: 105%;
+    background-color: aqua; /* Aqua background */
   }
-  
 
+  .project2 {
+    width: 90%;
+    height: 105%;
+    background-color: blueviolet; /* Blueviolet background */
+  }
 }
